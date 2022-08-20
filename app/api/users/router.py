@@ -6,7 +6,7 @@ from .schema import UserCreateRequest, UserLoginoResponse, UserLoginRequest
 from .services.add_new_user import add_new_user_
 from .services.login import login_
 
-user_router = APIRouter(prefix="/users", tags=["user"])
+user_router = APIRouter(prefix="/user", tags=["user"])
 
 
 @user_router.post("")
