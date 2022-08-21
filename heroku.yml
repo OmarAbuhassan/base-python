@@ -1,8 +1,7 @@
 build:
   docker:
-    release:
-      dockerfile: Dockerfile
-      target: production
-release:
-  command:
-    - docker up
+    web: Dockerfile
+    dockerfile: Dockerfile
+    target: production
+run:
+  web: bundle exec puma -C config/puma.rb
